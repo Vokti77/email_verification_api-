@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'authentication',
     'todo',
     'rest_framework',
+    'inventory',
 ]
 
 MIDDLEWARE = [
@@ -125,21 +126,17 @@ USE_TZ = True
 # EMAIL CONFIG
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-EMAIL_FROM_USER = 'xyz@gmail.com'
-EMAIL_HOST_USER = 'xyz@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_FROM_USER = 'vokti77@gmail.com'
+EMAIL_HOST_USER = 'vokti77@gmail.com'
+EMAIL_HOST_PASSWORD = 'ppkxjmhfrroldedh'
 EMAIL_USE_TLS = True
-# EMAIL_FROM_USER = os.environ.get('EMAIL_FROM_USER')
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = os.environ.get('EMAIL_FROM_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'todosite/static')]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # django_heroku.settings(locals())
 
